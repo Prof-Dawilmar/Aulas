@@ -5,6 +5,7 @@
 - 📫 Para me encontrar, não me procure, as estradas sabem sobre nossos passos.
 - 😄 Você saberá que estou ao seu lado.
 - ⚡ Sim, saberá e será muito proveitoso.
+- Não desista de tentar
 
 
 <!---
