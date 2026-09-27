@@ -1,11 +1,16 @@
 name: Lint and Test Specific Script
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Act/script.py'
+  workflow_dispatch:
 
 jobs:
   lint-and-test:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
