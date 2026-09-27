@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'Act/script.py'
+      - 'AcTest/script.py'
   workflow_dispatch:
 
 jobs:
