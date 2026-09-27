@@ -25,7 +25,7 @@ jobs:
           pip install flake8 pytest
 
       - name: Run lint check on specific script
-        run: flake8 path/to/your_script.py
+        run: flake8 ActTest/script.py
 
       - name: Run tests on specific script
-        run: pytest tests/test_script.py
+        run: pytest ActTest/test/test_script.py
