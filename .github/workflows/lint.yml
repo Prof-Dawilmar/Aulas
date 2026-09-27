@@ -1,0 +1,26 @@
+name: Lint and Test Specific Script
+
+on: [push, pull_request]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install flake8 pytest
+
+      - name: Run lint check on specific script
+        run: flake8 path/to/your_script.py
+
+      - name: Run tests on specific script
+        run: pytest tests/test_script.py
