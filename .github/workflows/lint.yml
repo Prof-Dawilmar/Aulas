@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'AcTest/script.py'
+      - '/AcTest/script.py'
   workflow_dispatch:
 
 jobs:
@@ -28,4 +28,4 @@ jobs:
         run: flake8 AcTest/script.py
 
       - name: Run tests on specific script
-        run: pytest AcTest/test/script_test.py
+        run: pytest /AcTest/test/script_test.py
